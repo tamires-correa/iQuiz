@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("O botão foi pressionado")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        startButton.layoutButton()
     }
-
 
 }
 
