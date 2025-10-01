@@ -16,7 +16,7 @@ O **iQuiz** é um aplicativo de perguntas e respostas que desafia o conhecimento
 
 ## 🛠️ **Tecnologias Utilizadas:**
 
-* **Programa:** Xcode
+* **IDE:** Xcode (Version 26.0.1)
 * **Linguagem:** Swift
 * **Frameworks:** UIKit
 * **Navegação:** UINavigationController
