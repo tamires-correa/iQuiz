@@ -1,8 +1,8 @@
-# iQuiz ❔❔❔
+# iQuiz
 
 ## **Sobre o Aplicativo:**
 
-    O **iQuiz** é um aplicativo de perguntas e respostas que desafia o conhecimento dos usuários com 10 questões sobre obras do famoso arquiteto brasileiro Oscar Niemeyer. Desenvolvido em **Swift** e **UIKit**, o aplicativo oferece uma experiência de usuário simples e direta para testar seu conhecimento 🧠.
+O **iQuiz** é um aplicativo de perguntas e respostas que desafia o conhecimento dos usuários com 10 questões sobre obras do famoso arquiteto brasileiro Oscar Niemeyer. Desenvolvido em **Swift** e **UIKit**, o aplicativo oferece uma experiência de usuário simples e direta para testar seu conhecimento 🧠.
 
 ## **Funcionalidades:**
 
@@ -24,7 +24,7 @@
 
 ## 👩‍💻 **Autor:**
 
-Desenvolvido por **Tamires Correa**(https://github.com/tamires-correa/)
+Desenvolvido por **Tamires Correa** (https://github.com/tamires-correa/)
 
 
 
