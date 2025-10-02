@@ -2,7 +2,7 @@
 //  QuestionsViewController.swift
 //  iQuiz
 //
-//  Created by Tamires Corrêa on 30/09/25.
+//  Created by Tamires Corrêa on 02/10/25.
 //
 
 import UIKit
