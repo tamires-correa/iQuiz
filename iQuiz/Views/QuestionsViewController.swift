@@ -9,9 +9,14 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
 
+    @IBOutlet weak var titleQuestion: UILabel!
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        print(sender.tag)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
     }
     
