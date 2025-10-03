@@ -129,7 +129,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olho 1x" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-wW-Wnl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQF-wW-Wnl">
                                 <rect key="frame" x="8" y="314.33333333333331" width="386" height="140.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SQF-wW-Wnl" secondAttribute="height" multiplier="11:4" id="07v-Ma-pq9"/>
@@ -138,7 +138,7 @@
                                     <constraint firstAttribute="width" secondItem="SQF-wW-Wnl" secondAttribute="height" multiplier="11:4" id="dqV-hd-bR3"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-PO-I94" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-PO-I94" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
                                 <rect key="frame" x="64" y="504.66666666666674" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="0FU-VR-dvK"/>
@@ -152,7 +152,7 @@
                                     <action selector="answerButtonPressed:" destination="xg0-T4-CPQ" eventType="touchUpInside" id="qUF-tZ-Ahx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Np2-rL-S7N" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Np2-rL-S7N" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
                                 <rect key="frame" x="64" y="591.66666666666663" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="zHN-cz-PEL"/>
@@ -166,7 +166,7 @@
                                     <action selector="answerButtonPressed:" destination="xg0-T4-CPQ" eventType="touchUpInside" id="KAA-AQ-HY6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXH-0v-khX" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXH-0v-khX" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
                                 <rect key="frame" x="64" y="678.66666666666663" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="nY6-n2-jSI"/>
@@ -190,7 +190,6 @@
                             <constraint firstItem="gdH-K5-7Fw" firstAttribute="trailing" secondItem="iXH-0v-khX" secondAttribute="trailing" constant="64" id="RyJ-uV-ski"/>
                             <constraint firstItem="2fc-PO-I94" firstAttribute="top" secondItem="SQF-wW-Wnl" secondAttribute="bottom" constant="50" id="T4p-zo-9OO"/>
                             <constraint firstItem="Np2-rL-S7N" firstAttribute="leading" secondItem="gdH-K5-7Fw" secondAttribute="leading" constant="64" id="Uf5-Uc-eGD"/>
-                            <constraint firstItem="6kW-A4-rBA" firstAttribute="centerX" secondItem="azj-fv-i4H" secondAttribute="centerX" id="UnS-n4-6Z0"/>
                             <constraint firstItem="SQF-wW-Wnl" firstAttribute="top" secondItem="6kW-A4-rBA" secondAttribute="bottom" constant="65" id="Wad-Jk-NEL"/>
                             <constraint firstItem="gdH-K5-7Fw" firstAttribute="trailing" secondItem="2fc-PO-I94" secondAttribute="trailing" constant="64" id="cdw-pC-Imj"/>
                             <constraint firstItem="6kW-A4-rBA" firstAttribute="top" secondItem="gdH-K5-7Fw" secondAttribute="top" constant="40" id="eWF-2j-oUx"/>
@@ -198,13 +197,18 @@
                             <constraint firstItem="gdH-K5-7Fw" firstAttribute="trailing" secondItem="SQF-wW-Wnl" secondAttribute="trailing" constant="8" id="lbe-Jt-lfY"/>
                             <constraint firstItem="6kW-A4-rBA" firstAttribute="leading" secondItem="gdH-K5-7Fw" secondAttribute="leading" constant="64" id="mJW-8t-8c7"/>
                             <constraint firstItem="gdH-K5-7Fw" firstAttribute="trailing" secondItem="Np2-rL-S7N" secondAttribute="trailing" constant="64" id="nLV-Iv-i1A"/>
+                            <constraint firstItem="6kW-A4-rBA" firstAttribute="centerX" secondItem="azj-fv-i4H" secondAttribute="centerX" id="q2I-Rs-kQH"/>
                             <constraint firstItem="gdH-K5-7Fw" firstAttribute="trailing" secondItem="6kW-A4-rBA" secondAttribute="trailing" constant="64" id="vKf-4M-28j"/>
                             <constraint firstItem="SQF-wW-Wnl" firstAttribute="leading" secondItem="gdH-K5-7Fw" secondAttribute="leading" constant="8" id="xYi-R6-7OP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tjt-Xn-20H"/>
                     <connections>
+                        <outlet property="imagemView" destination="SQF-wW-Wnl" id="2Qb-Un-76G"/>
                         <outlet property="titleQuestion" destination="6kW-A4-rBA" id="dJR-GV-ZTY"/>
+                        <outletCollection property="answerButtons" destination="2fc-PO-I94" collectionClass="NSMutableArray" id="vMX-Gd-EZF"/>
+                        <outletCollection property="answerButtons" destination="Np2-rL-S7N" collectionClass="NSMutableArray" id="UYk-ST-StB"/>
+                        <outletCollection property="answerButtons" destination="iXH-0v-khX" collectionClass="NSMutableArray" id="7AU-US-Zgt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdK-Rw-W54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,6 +236,5 @@
     </scenes>
     <resources>
         <image name="Logo" width="217" height="104"/>
-        <image name="olho 1x" width="3000" height="2000"/>
     </resources>
 </document>

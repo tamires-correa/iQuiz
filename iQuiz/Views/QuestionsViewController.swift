@@ -8,16 +8,41 @@
 import UIKit
 
 class QuestionsViewController: UIViewController {
-
+   
+    @IBOutlet var answerButtons: [LayoutButton]!
     @IBOutlet weak var titleQuestion: UILabel!
+    @IBOutlet weak var imagemView: UIImageView!
+    
+    var score = 0
+    var questionNumber = 0
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        print(sender.tag)
+        let userAnsweredCorrectly = questions[questionNumber].correctAnswer == sender.tag
+        if userAnsweredCorrectly {
+            score += 1
+            print("Acertou")
+        }
+        if questionNumber < questions.count - 1 {
+            questionNumber += 1
+            settingsQuestion()
+        }
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        // Do any additional setup after loading the view.
+
+        settingsQuestion()
+    }
+    
+    func settingsQuestion(){
+        titleQuestion.text = questions[questionNumber].title
+        imagemView.image = UIImage(named: questions[questionNumber].imageName)
+        for button in answerButtons {
+            let titleButton = questions[questionNumber].answers[button.tag]
+            button.setTitle(titleButton, for: .normal)
+        }
     }
     
 
