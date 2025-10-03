@@ -19,15 +19,13 @@ class LayoutButton: UIButton {
         layoutButton()
     }
     
-    
     private func layoutButton(){
         print("layout aplicado")
         self.layer.cornerRadius = 12
-        self.backgroundColor = UIColor(red: 93/255, green: 155/255, blue: 164/255, alpha: 1)
+        self.backgroundColor = UIColor.quizDefaut
         self.setTitleColor(.white, for: .normal)
+        self.setTitleColor(.white, for: .disabled)
         titleLabel?.numberOfLines = 0
 
     }
-    
-    
 }

@@ -13,9 +13,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.hidesBackButton = true
-
     }
-    
 
     /*
     // MARK: - Navigation

@@ -16,15 +16,26 @@ class QuestionsViewController: UIViewController {
     var score = 0
     var questionNumber = 0
     
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
-        let userAnsweredCorrectly = questions[questionNumber].correctAnswer == sender.tag
-        if userAnsweredCorrectly {
-            score += 1
-            print("Acertou")
+    @IBAction func answerButtonPressed(_ sender: LayoutButton) {
+        answerButtons.forEach { $0.isEnabled = false }
+        
+    let currentQuestion = questions[questionNumber]
+        
+    if currentQuestion.correctAnswer == sender.tag {
+        score += 1
+        sender.markAsCorrect()
+        print("Acertou")
+    } else {
+        sender.markAsIncorrect()
+        
+        if let correctButton = answerButtons.first(where: { $0.tag == currentQuestion.correctAnswer }) {
+            correctButton.markAsCorrect()
         }
+    }
+        
         if questionNumber < questions.count - 1 {
             questionNumber += 1
-            settingsQuestion()
+            Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(settingsQuestion), userInfo: nil, repeats: false)
         }
         
     }
@@ -36,12 +47,15 @@ class QuestionsViewController: UIViewController {
         settingsQuestion()
     }
     
-    func settingsQuestion(){
+    @objc func settingsQuestion(){
         titleQuestion.text = questions[questionNumber].title
         imagemView.image = UIImage(named: questions[questionNumber].imageName)
+        
         for button in answerButtons {
             let titleButton = questions[questionNumber].answers[button.tag]
+            button.resetToDefault()
             button.setTitle(titleButton, for: .normal)
+            button.isEnabled = true
         }
     }
     
