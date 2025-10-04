@@ -1,6 +1,7 @@
 # iQuiz
 
-![Status](https://img.shields.io/badge/PROJETO%20EM%20CONSTRU%C3%87%C3%83O-green?style=flat-square)
+![Static Badge](https://img.shields.io/badge/Status%3A-Em%20constru%C3%A7%C3%A3o-green--gray)
+
 
 ## **Sobre o Aplicativo:**
 
