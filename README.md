@@ -1,5 +1,7 @@
 # iQuiz
 
+![Status](https://img.shields.io/badge/PROJETO%20EM%20CONSTRU%C3%87%C3%83O-green?style=flat-square)
+
 ## **Sobre o Aplicativo:**
 
 O **iQuiz** é um aplicativo de perguntas e respostas que desafia o conhecimento dos usuários com 10 questões sobre obras do famoso arquiteto brasileiro Oscar Niemeyer. Desenvolvido em **Swift** e **UIKit**, o aplicativo oferece uma experiência de usuário simples e direta para testar seu conhecimento 🧠.
