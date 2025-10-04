@@ -43,8 +43,8 @@ extension LayoutButton {
         
         addSubview(label)
         
-        label.topAnchor.constraint(equalTo: topAnchor, constant: 2).isActive = true
-        label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
+        label.topAnchor.constraint(equalTo: topAnchor, constant: 3).isActive = true
+        label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
         
         label.alpha = 0
         label.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)

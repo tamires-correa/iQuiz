@@ -23,7 +23,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Jogar!">
+                                <buttonConfiguration key="configuration" style="plain" title="Próximo">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -210,11 +210,111 @@
                         <outletCollection property="answerButtons" destination="2fc-PO-I94" collectionClass="NSMutableArray" id="vMX-Gd-EZF"/>
                         <outletCollection property="answerButtons" destination="Np2-rL-S7N" collectionClass="NSMutableArray" id="UYk-ST-StB"/>
                         <outletCollection property="answerButtons" destination="iXH-0v-khX" collectionClass="NSMutableArray" id="7AU-US-Zgt"/>
+                        <segue destination="UsW-bA-TiZ" kind="show" identifier="goToFinalScreen" id="nBg-Ae-c3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdK-Rw-W54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8108.9552238805963" y="131.80778032036613"/>
+            <point key="canvasLocation" x="8154" y="130"/>
+        </scene>
+        <!--Final Screen View Controller-->
+        <scene sceneID="hAN-L9-uh2">
+            <objects>
+                <viewController id="UsW-bA-TiZ" customClass="FinalScreenViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72U-OA-Soo">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parabéns, você finalizou o iQuiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kC-af-rOO">
+                                <rect key="frame" x="64" y="218" width="274" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou 2 de 10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csA-yj-WcW">
+                                <rect key="frame" x="64" y="358" width="274" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentual final: 20%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdk-AR-tvQ">
+                                <rect key="frame" x="64" y="409.33333333333331" width="274" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De0-Hv-c5q" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                                <rect key="frame" x="64" y="515.66666666666663" width="274" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="D3d-ph-s3X"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mais sobre as obras">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoO-yo-kig" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                                <rect key="frame" x="64" y="602.66666666666663" width="274" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Zad-ZJ-LUo"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mais sobre o arquiteto">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-YY-1yS" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                                <rect key="frame" x="64" y="689.66666666666663" width="274" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="dFL-pc-KI9"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jogar Novamente">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xc9-aK-zWJ"/>
+                        <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="csA-yj-WcW" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="0QA-co-wgL"/>
+                            <constraint firstItem="2Mf-YY-1yS" firstAttribute="top" secondItem="xoO-yo-kig" secondAttribute="bottom" constant="25" id="31J-PG-1nF"/>
+                            <constraint firstItem="xoO-yo-kig" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="6Ji-Qc-kQW"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="7kC-af-rOO" secondAttribute="trailing" constant="64" id="6Sx-Go-HMN"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="2Mf-YY-1yS" secondAttribute="trailing" constant="64" id="8XG-5z-cQ5"/>
+                            <constraint firstItem="gdk-AR-tvQ" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="E1K-Hy-Afu"/>
+                            <constraint firstItem="gdk-AR-tvQ" firstAttribute="top" secondItem="csA-yj-WcW" secondAttribute="bottom" constant="25" id="GA1-OR-eMQ"/>
+                            <constraint firstItem="7kC-af-rOO" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="KR5-mh-ddk"/>
+                            <constraint firstItem="2Mf-YY-1yS" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="Khz-Ce-u1d"/>
+                            <constraint firstItem="2Mf-YY-1yS" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="L7L-y2-X5P"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="csA-yj-WcW" secondAttribute="trailing" constant="64" id="LnG-XA-av7"/>
+                            <constraint firstItem="De0-Hv-c5q" firstAttribute="top" secondItem="gdk-AR-tvQ" secondAttribute="bottom" constant="80" id="RI1-iQ-g9z"/>
+                            <constraint firstItem="De0-Hv-c5q" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="T13-md-JEH"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="De0-Hv-c5q" secondAttribute="trailing" constant="64" id="XHR-jX-XKJ"/>
+                            <constraint firstItem="7kC-af-rOO" firstAttribute="top" secondItem="xc9-aK-zWJ" secondAttribute="top" constant="40" id="ZGx-8X-bjJ"/>
+                            <constraint firstItem="csA-yj-WcW" firstAttribute="top" secondItem="7kC-af-rOO" secondAttribute="bottom" constant="80" id="ZL1-DB-Xab"/>
+                            <constraint firstItem="csA-yj-WcW" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="aUL-Vk-SAS"/>
+                            <constraint firstItem="De0-Hv-c5q" firstAttribute="centerX" secondItem="72U-OA-Soo" secondAttribute="centerX" id="dSH-9m-BQB"/>
+                            <constraint firstItem="xoO-yo-kig" firstAttribute="top" secondItem="De0-Hv-c5q" secondAttribute="bottom" constant="25" id="dg0-KT-vcq"/>
+                            <constraint firstItem="gdk-AR-tvQ" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="f1S-D6-UpC"/>
+                            <constraint firstItem="7kC-af-rOO" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="fzM-2V-O6b"/>
+                            <constraint firstItem="xoO-yo-kig" firstAttribute="leading" secondItem="xc9-aK-zWJ" secondAttribute="leading" constant="64" id="lzr-dk-UbG"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="gdk-AR-tvQ" secondAttribute="trailing" constant="64" id="qDh-xh-7vs"/>
+                            <constraint firstItem="xc9-aK-zWJ" firstAttribute="trailing" secondItem="xoO-yo-kig" secondAttribute="trailing" constant="64" id="vEo-TL-Fvx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fbw-o1-ABm"/>
+                    <connections>
+                        <outlet property="percentLabel" destination="gdk-AR-tvQ" id="0GC-cK-gv1"/>
+                        <outlet property="resultLabel" destination="csA-yj-WcW" id="LAO-2z-bq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KW-BK-HbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8958" y="130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Op4-u4-0E7">

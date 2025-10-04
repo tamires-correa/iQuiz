@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C0CA5D282E87317500F540F2 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05C24442E908F980096CF50 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C0CA5D3A2E87317600F540F2 /* Exceptions for "iQuiz" folder in "iQuiz" target */ = {
+		C0EE45562E90856600D3EC4F /* Exceptions for "iQuiz" folder in "iQuiz" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C0CA5D2A2E87317500F540F2 /* iQuiz */ = {
+		C0EE45492E90856600D3EC4F /* iQuiz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C0CA5D3A2E87317600F540F2 /* Exceptions for "iQuiz" folder in "iQuiz" target */,
+				C0EE45562E90856600D3EC4F /* Exceptions for "iQuiz" folder in "iQuiz" target */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -45,17 +45,9 @@
 		C0CA5D1F2E87317500F540F2 = {
 			isa = PBXGroup;
 			children = (
-				C0CA5D2A2E87317500F540F2 /* iQuiz */,
-				C0CA5D292E87317500F540F2 /* Products */,
+				C0EE45492E90856600D3EC4F /* iQuiz */,
+				C05C24442E908F980096CF50 /* iQuiz.app */,
 			);
-			sourceTree = "<group>";
-		};
-		C0CA5D292E87317500F540F2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C0CA5D282E87317500F540F2 /* iQuiz.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,13 +66,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C0CA5D2A2E87317500F540F2 /* iQuiz */,
+				C0EE45492E90856600D3EC4F /* iQuiz */,
 			);
 			name = iQuiz;
 			packageProductDependencies = (
 			);
 			productName = iQuiz;
-			productReference = C0CA5D282E87317500F540F2 /* iQuiz.app */;
+			productReference = C05C24442E908F980096CF50 /* iQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +100,7 @@
 			mainGroup = C0CA5D1F2E87317500F540F2;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C0CA5D292E87317500F540F2 /* Products */;
+			productRefGroup = C0CA5D1F2E87317500F540F2;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

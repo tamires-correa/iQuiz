@@ -35,9 +35,12 @@ class QuestionsViewController: UIViewController {
         
         if questionNumber < questions.count - 1 {
             questionNumber += 1
-            Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(settingsQuestion), userInfo: nil, repeats: false)
-        }
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(settingsQuestion), userInfo: nil, repeats: false)
+        } else { goToFinalScreen() }
         
+        func goToFinalScreen(){
+            performSegue(withIdentifier: "goToFinalScreen", sender: nil)
+        }
     }
     
     override func viewDidLoad() {
@@ -58,7 +61,10 @@ class QuestionsViewController: UIViewController {
             button.isEnabled = true
         }
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        guard let finalVC = segue.destination as? FinalScreenViewController else { return }
+        finalVC.score = self.score
+    }
 
     /*
     // MARK: - Navigation
