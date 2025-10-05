@@ -19,28 +19,32 @@ class QuestionsViewController: UIViewController {
     @IBAction func answerButtonPressed(_ sender: LayoutButton) {
         answerButtons.forEach { $0.isEnabled = false }
         
-    let currentQuestion = questions[questionNumber]
+        let currentQuestion = questions[questionNumber]
         
-    if currentQuestion.correctAnswer == sender.tag {
-        score += 1
-        sender.markAsCorrect()
-        print("Acertou")
-    } else {
-        sender.markAsIncorrect()
-        
-        if let correctButton = answerButtons.first(where: { $0.tag == currentQuestion.correctAnswer }) {
-            correctButton.markAsCorrect()
+        if currentQuestion.correctAnswer == sender.tag {
+            score += 1
+            sender.markAsCorrect()
+            print("Acertou")
+        } else {
+            sender.markAsIncorrect()
+            
+            if let correctButton = answerButtons.first(where: { $0.tag == currentQuestion.correctAnswer }) {
+                correctButton.markAsCorrect()
+            }
         }
-    }
         
         if questionNumber < questions.count - 1 {
             questionNumber += 1
             Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(settingsQuestion), userInfo: nil, repeats: false)
-        } else { goToFinalScreen() }
-        
-        func goToFinalScreen(){
-            performSegue(withIdentifier: "goToFinalScreen", sender: nil)
+        } else {
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+                self.goToFinalScreen()
+            }
         }
+    }
+    
+    func goToFinalScreen(){
+        performSegue(withIdentifier: "goToFinalScreen", sender: nil)
     }
     
     override func viewDidLoad() {
@@ -61,6 +65,7 @@ class QuestionsViewController: UIViewController {
             button.isEnabled = true
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         guard let finalVC = segue.destination as? FinalScreenViewController else { return }
         finalVC.score = self.score
@@ -75,5 +80,4 @@ class QuestionsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

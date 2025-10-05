@@ -14,17 +14,20 @@ class FinalScreenViewController: UIViewController {
     
     var score: Int?
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        
+        settingsFinalScreen()
         // Do any additional setup after loading the view.
     }
     
-
+    func settingsFinalScreen(){
+        guard let score = score else {return}
+        resultLabel.text = "Você acertou \(score) de \(questions.count) questões"
+        
+        let percent = (score * 100) / (questions.count)
+        percentLabel.text = "Percentual final: \(percent)%"
+    }
     /*
     // MARK: - Navigation
 
@@ -34,5 +37,4 @@ class FinalScreenViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

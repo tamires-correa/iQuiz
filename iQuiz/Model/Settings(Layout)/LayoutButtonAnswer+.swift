@@ -35,7 +35,7 @@ extension LayoutButton {
         removeFeedbackLabel()
         let label = UILabel()
         label.text = text
-        label.font = .systemFont(ofSize: 10, weight: .bold)
+        label.font = .systemFont(ofSize: 10.5, weight: .bold)
         label.textColor = textColor
         label.textAlignment = .right
         label.tag = LayoutButton.feedbackLabelTag
@@ -43,8 +43,8 @@ extension LayoutButton {
         
         addSubview(label)
         
-        label.topAnchor.constraint(equalTo: topAnchor, constant: 3).isActive = true
-        label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
+        label.topAnchor.constraint(equalTo: topAnchor, constant: 2.5).isActive = true
+        label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
         
         label.alpha = 0
         label.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
