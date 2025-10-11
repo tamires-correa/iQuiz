@@ -261,9 +261,12 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Mais sobre o arquiteto">
+                                <buttonConfiguration key="configuration" style="plain" title="Sobre o arquiteto">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="thr-lq-2CQ" kind="show" id="zHL-HB-mp2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mf-YY-1yS" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
                                 <rect key="frame" x="64" y="573.66666666666663" width="274" height="62"/>
@@ -337,11 +340,97 @@
             </objects>
             <point key="canvasLocation" x="5861" y="130"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="PF0-UM-BPo">
+            <objects>
+                <viewController id="thr-lq-2CQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gBq-I5-Bdc">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar Ribeiro de Almeida Niemeyer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ng-oY9">
+                                <rect key="frame" x="64" y="82" width="274" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1907 - 2012)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtx-5V-JAC">
+                                <rect key="frame" x="137" y="152" width="128" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-Cz-67O">
+                                <rect key="frame" x="0.0" y="201" width="402" height="601"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-hn-cmR">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="314.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oscar" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-cC-5M7">
+                                                <rect key="frame" x="64" y="15" width="274" height="210"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="210" id="PiB-kA-Lyw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-1u-S7m">
+                                                <rect key="frame" x="25" y="250" width="352" height="1026.3333333333333"/>
+                                                <mutableString key="text">Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
+Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal — consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xVE-cC-5M7" secondAttribute="trailing" constant="64" id="L9R-3V-1qa"/>
+                                            <constraint firstItem="JTs-1u-S7m" firstAttribute="top" secondItem="xVE-cC-5M7" secondAttribute="bottom" constant="25" id="Rps-Ms-pgQ"/>
+                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="64" id="Xpz-vB-GUe"/>
+                                            <constraint firstAttribute="trailing" secondItem="JTs-1u-S7m" secondAttribute="trailing" constant="25" id="Xx2-Mf-Uwv"/>
+                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="top" secondItem="g8b-hn-cmR" secondAttribute="top" constant="15" id="bNG-6h-Ofl"/>
+                                            <constraint firstItem="JTs-1u-S7m" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="25" id="trC-2N-USu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Trc-Fd-tRC" firstAttribute="trailing" secondItem="g8b-hn-cmR" secondAttribute="trailing" id="9rK-dJ-vFX"/>
+                                    <constraint firstAttribute="bottom" secondItem="JTs-1u-S7m" secondAttribute="bottom" constant="25" id="LDb-S8-3GK"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="top" secondItem="gQv-cv-ZPE" secondAttribute="top" id="giN-DO-p5t"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="width" secondItem="Trc-Fd-tRC" secondAttribute="width" id="i8z-ke-6Ac"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="leading" secondItem="Trc-Fd-tRC" secondAttribute="leading" id="lkv-hO-bN7"/>
+                                    <constraint firstItem="gQv-cv-ZPE" firstAttribute="bottom" secondItem="g8b-hn-cmR" secondAttribute="bottom" constant="987" id="rYk-IC-rPq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gQv-cv-ZPE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Trc-Fd-tRC"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="byq-fE-FnX"/>
+                        <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dsg-ng-oY9" firstAttribute="leading" secondItem="gBq-I5-Bdc" secondAttribute="leading" constant="64" id="Ctw-wM-EXq"/>
+                            <constraint firstItem="hgp-Cz-67O" firstAttribute="leading" secondItem="byq-fE-FnX" secondAttribute="leading" id="F6T-dq-sbz"/>
+                            <constraint firstItem="byq-fE-FnX" firstAttribute="bottom" secondItem="hgp-Cz-67O" secondAttribute="bottom" id="HVk-SG-dgn"/>
+                            <constraint firstItem="dsg-ng-oY9" firstAttribute="top" secondItem="byq-fE-FnX" secondAttribute="top" constant="20" id="PIp-dw-lK8"/>
+                            <constraint firstItem="jtx-5V-JAC" firstAttribute="centerX" secondItem="gBq-I5-Bdc" secondAttribute="centerX" id="Phr-xt-sqk"/>
+                            <constraint firstItem="dsg-ng-oY9" firstAttribute="centerX" secondItem="gBq-I5-Bdc" secondAttribute="centerX" id="Vfd-PV-Wsk"/>
+                            <constraint firstItem="hgp-Cz-67O" firstAttribute="top" secondItem="jtx-5V-JAC" secondAttribute="bottom" constant="25" id="a1y-Lw-3CG"/>
+                            <constraint firstAttribute="trailing" secondItem="dsg-ng-oY9" secondAttribute="trailing" constant="64" id="cLx-Fm-2fc"/>
+                            <constraint firstItem="jtx-5V-JAC" firstAttribute="top" secondItem="dsg-ng-oY9" secondAttribute="bottom" constant="10" id="gwU-fU-v8X"/>
+                            <constraint firstItem="byq-fE-FnX" firstAttribute="trailing" secondItem="hgp-Cz-67O" secondAttribute="trailing" id="rBJ-yo-Ldt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yv8-KF-r2J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6n-yY-Uph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9774.626865671642" y="129.7482837528604"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="JWn-Re-rIA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="217" height="104"/>
+        <image name="oscar" width="61.333332061767578" height="75"/>
     </resources>
 </document>
