@@ -91,21 +91,38 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Tu-rvV" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                                <rect key="frame" x="64" y="462" width="274" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="VqD-eB-n9c"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sobre o arquiteto">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="thr-lq-2CQ" kind="show" id="oDQ-Sx-zCr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5RR-R9-8Ra"/>
                         <color key="backgroundColor" red="0.68235294117647061" green="0.83529411764705885" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="3gM-mB-Yjd"/>
+                            <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="ACa-Tu-rvV" secondAttribute="trailing" constant="64" id="43p-Tk-bAH"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="HYH-DM-nyl" secondAttribute="trailing" constant="64" id="9hx-xX-aey"/>
                             <constraint firstItem="FoN-mF-dnx" firstAttribute="leading" secondItem="5RR-R9-8Ra" secondAttribute="leading" constant="47" id="MBf-Lw-MTv"/>
                             <constraint firstItem="qbq-Yz-FOi" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="NqL-Al-fSD"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="FoN-mF-dnx" secondAttribute="trailing" constant="47" id="OnX-ms-K0z"/>
                             <constraint firstItem="FoN-mF-dnx" firstAttribute="top" secondItem="qbq-Yz-FOi" secondAttribute="bottom" constant="15" id="Wvh-IT-bQ4"/>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="asK-37-7OS"/>
+                            <constraint firstItem="ACa-Tu-rvV" firstAttribute="top" secondItem="HYH-DM-nyl" secondAttribute="bottom" constant="25" id="bRn-9F-4V9"/>
+                            <constraint firstItem="ACa-Tu-rvV" firstAttribute="leading" secondItem="5RR-R9-8Ra" secondAttribute="leading" constant="64" id="c6H-tx-wfA"/>
                             <constraint firstItem="qbq-Yz-FOi" firstAttribute="top" secondItem="5RR-R9-8Ra" secondAttribute="top" constant="40" id="dz0-xd-JeX"/>
                             <constraint firstItem="FoN-mF-dnx" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="epp-mH-JEs"/>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="leading" secondItem="5RR-R9-8Ra" secondAttribute="leading" constant="64" id="fgP-4q-sWi"/>
-                            <constraint firstItem="HYH-DM-nyl" firstAttribute="top" secondItem="FoN-mF-dnx" secondAttribute="bottom" constant="43" id="vPZ-6G-pjV"/>
+                            <constraint firstItem="HYH-DM-nyl" firstAttribute="top" secondItem="FoN-mF-dnx" secondAttribute="bottom" constant="50" id="vPZ-6G-pjV"/>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="centerY" secondItem="Qqx-R0-Vha" secondAttribute="centerY" id="xuC-gJ-Z9c"/>
                         </constraints>
                     </view>
@@ -360,45 +377,64 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-Cz-67O">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-Cz-67O">
                                 <rect key="frame" x="0.0" y="201" width="402" height="601"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-hn-cmR">
-                                        <rect key="frame" x="0.0" y="0.0" width="402" height="314.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="1477.6666666666667"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oscar" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-cC-5M7">
-                                                <rect key="frame" x="64" y="15" width="274" height="210"/>
+                                                <rect key="frame" x="64" y="25" width="274" height="210"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="210" id="PiB-kA-Lyw"/>
+                                                    <constraint firstAttribute="height" constant="210" id="wgs-Ag-biq"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-1u-S7m">
-                                                <rect key="frame" x="25" y="250" width="352" height="1026.3333333333333"/>
-                                                <mutableString key="text">Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
-Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal — consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-TN-2wl">
+                                                <rect key="frame" x="32" y="260" width="338" height="1185.6666666666667"/>
+                                                <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <mutableString key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
+	Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.
+
+Para saber mais acesse: 
+</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="https://www.oscarniemeyer.org.br/">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" metaFont="system" size="20"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="xVE-cC-5M7" secondAttribute="trailing" constant="64" id="L9R-3V-1qa"/>
-                                            <constraint firstItem="JTs-1u-S7m" firstAttribute="top" secondItem="xVE-cC-5M7" secondAttribute="bottom" constant="25" id="Rps-Ms-pgQ"/>
-                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="64" id="Xpz-vB-GUe"/>
-                                            <constraint firstAttribute="trailing" secondItem="JTs-1u-S7m" secondAttribute="trailing" constant="25" id="Xx2-Mf-Uwv"/>
-                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="top" secondItem="g8b-hn-cmR" secondAttribute="top" constant="15" id="bNG-6h-Ofl"/>
-                                            <constraint firstItem="JTs-1u-S7m" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="25" id="trC-2N-USu"/>
+                                            <constraint firstAttribute="trailing" secondItem="xVE-cC-5M7" secondAttribute="trailing" constant="64" id="6nQ-6v-fy7"/>
+                                            <constraint firstItem="Rdt-TN-2wl" firstAttribute="top" secondItem="xVE-cC-5M7" secondAttribute="bottom" constant="25" id="97n-4S-a1p"/>
+                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="top" secondItem="g8b-hn-cmR" secondAttribute="top" constant="25" id="C4P-ZB-V9X"/>
+                                            <constraint firstItem="xVE-cC-5M7" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="64" id="Pfj-2I-Kw7"/>
+                                            <constraint firstItem="Rdt-TN-2wl" firstAttribute="leading" secondItem="g8b-hn-cmR" secondAttribute="leading" constant="32" id="XBS-90-xdW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rdt-TN-2wl" secondAttribute="trailing" constant="32" id="kYg-lh-adn"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rdt-TN-2wl" secondAttribute="bottom" constant="32" id="mIw-AR-9fQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Trc-Fd-tRC" firstAttribute="trailing" secondItem="g8b-hn-cmR" secondAttribute="trailing" id="9rK-dJ-vFX"/>
-                                    <constraint firstAttribute="bottom" secondItem="JTs-1u-S7m" secondAttribute="bottom" constant="25" id="LDb-S8-3GK"/>
-                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="top" secondItem="gQv-cv-ZPE" secondAttribute="top" id="giN-DO-p5t"/>
-                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="width" secondItem="Trc-Fd-tRC" secondAttribute="width" id="i8z-ke-6Ac"/>
-                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="leading" secondItem="Trc-Fd-tRC" secondAttribute="leading" id="lkv-hO-bN7"/>
-                                    <constraint firstItem="gQv-cv-ZPE" firstAttribute="bottom" secondItem="g8b-hn-cmR" secondAttribute="bottom" constant="987" id="rYk-IC-rPq"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="leading" secondItem="gQv-cv-ZPE" secondAttribute="leading" id="EhJ-Fq-K9P"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="top" secondItem="gQv-cv-ZPE" secondAttribute="top" id="Jsc-re-To0"/>
+                                    <constraint firstItem="gQv-cv-ZPE" firstAttribute="bottom" secondItem="g8b-hn-cmR" secondAttribute="bottom" id="bHh-k7-eF1"/>
+                                    <constraint firstItem="g8b-hn-cmR" firstAttribute="width" secondItem="Trc-Fd-tRC" secondAttribute="width" id="hQz-wG-LB4"/>
+                                    <constraint firstItem="gQv-cv-ZPE" firstAttribute="trailing" secondItem="g8b-hn-cmR" secondAttribute="trailing" id="tB8-VS-xrN"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="gQv-cv-ZPE"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Trc-Fd-tRC"/>
@@ -427,6 +463,7 @@ Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de B
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="zHL-HB-mp2"/>
         <segue reference="JWn-Re-rIA"/>
     </inferredMetricsTieBreakers>
     <resources>
