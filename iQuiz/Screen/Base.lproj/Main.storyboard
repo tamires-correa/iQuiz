@@ -270,6 +270,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Mais sobre as obras">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="x1r-UO-TLj" kind="show" id="8K2-5i-80d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoO-yo-kig" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
                                 <rect key="frame" x="64" y="486.66666666666674" width="274" height="62"/>
@@ -394,11 +397,11 @@
                                                 <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <mutableString key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
+                                                        <string key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
 	Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.
 
 Para saber mais acesse: 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <font key="NSFont" metaFont="system" size="20"/>
@@ -460,6 +463,22 @@ Para saber mais acesse:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6n-yY-Uph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9774.626865671642" y="129.7482837528604"/>
+        </scene>
+        <!--About Works View Controller-->
+        <scene sceneID="ZVc-FC-Xyg">
+            <objects>
+                <viewController id="x1r-UO-TLj" customClass="AboutWorksViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z7j-Qc-Tvo">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5R0-7U-frJ"/>
+                        <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i7K-Hi-z41"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMN-h3-hGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10522" y="130"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
