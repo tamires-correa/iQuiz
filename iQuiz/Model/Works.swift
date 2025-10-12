@@ -14,7 +14,7 @@ struct Works{
 }
 
 let works: [Works] = [
-    Works(name: "Catedral Metropolitana de Brasília", imageName: "CatedralBrasília", year: 1970),
+    Works(name: "Catedral Metropolitana de Brasília", imageName: "CatedralBrasilia", year: 1970),
     Works(name: "MON (Museu Oscar Niemeyer)", imageName: "olho", year: 2002),
     Works(name: "Copan", imageName: "Copan", year: 1966),
     Works(name: "Congresso Nacional", imageName: "congresso", year: 1960),
@@ -23,5 +23,5 @@ let works: [Works] = [
     Works(name: "Igreja de Pampulha", imageName: "pampulha", year: 1943),
     Works(name: "Palácio da Alvorada", imageName: "alvorada", year: 1958),
     Works(name: "Teatro Popular", imageName: "caminho", year: 2007),
-    Works(name: "Supremo Tribunal de Justiça", imageName: "sfj", year: 1960)
+    Works(name: "Supremo Tribunal de Justiça", imageName: "stf", year: 1960)
     ]

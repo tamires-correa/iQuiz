@@ -1,5 +1,5 @@
 //
-//  AboutWorksViewController.swift
+//  WorksDetailViewController.swift
 //  iQuiz
 //
 //  Created by Tamires Corrêa on 12/10/25.
@@ -7,21 +7,14 @@
 
 import UIKit
 
-class AboutWorksViewController: UIViewController{
+class WorksDetailViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    var workList = works
-    
-    @IBAction func sort(_ sender: Any) {
-        print ("botão ordernar pressionado")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+
+        // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation

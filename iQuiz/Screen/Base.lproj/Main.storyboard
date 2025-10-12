@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,7 +62,7 @@
             <objects>
                 <viewController id="x0q-o8-OUZ" customClass="WelcomeViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qqx-R0-Vha">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Seja bem-vindes ao iQuiz! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-Yz-FOi">
@@ -71,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-DM-nyl" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="375" width="274" height="62"/>
+                                <rect key="frame" x="64" y="370" width="274" height="62"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Zn1-Cj-bks"/>
@@ -92,7 +93,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Tu-rvV" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="462" width="274" height="62"/>
+                                <rect key="frame" x="64" y="457" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="VqD-eB-n9c"/>
                                 </constraints>
@@ -105,10 +106,25 @@
                                     <segue destination="thr-lq-2CQ" kind="show" id="oDQ-Sx-zCr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntn-Pn-shz" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
+                                <rect key="frame" x="47" y="559" width="274" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="cgb-M5-68t"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sobre o arquiteto">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="x1r-UO-TLj" kind="show" id="GeG-AW-P31"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5RR-R9-8Ra"/>
                         <color key="backgroundColor" red="0.68235294117647061" green="0.83529411764705885" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ntn-Pn-shz" firstAttribute="top" secondItem="ACa-Tu-rvV" secondAttribute="bottom" constant="40" id="1a9-tg-tfO"/>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="3gM-mB-Yjd"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="ACa-Tu-rvV" secondAttribute="trailing" constant="64" id="43p-Tk-bAH"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="HYH-DM-nyl" secondAttribute="trailing" constant="64" id="9hx-xX-aey"/>
@@ -137,7 +153,7 @@
             <objects>
                 <viewController id="xg0-T4-CPQ" customClass="QuestionsViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azj-fv-i4H">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título Pergunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kW-A4-rBA">
@@ -397,13 +413,13 @@
                                                 <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
+                                                        <mutableString key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
 	Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.
 
 Para saber mais acesse: 
-</string>
+</mutableString>
                                                         <attributes>
-                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.32416015625000005" green="0.32416015625000005" blue="0.32416015625000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="20"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -469,24 +485,131 @@ Para saber mais acesse:
             <objects>
                 <viewController id="x1r-UO-TLj" customClass="AboutWorksViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7j-Qc-Tvo">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrm-Tg-tnp">
+                                <rect key="frame" x="269.66666666666669" y="87" width="86.333333333333314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2if-1r-JJ0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ordenar"/>
+                                <connections>
+                                    <action selector="sort:" destination="x1r-UO-TLj" eventType="touchUpInside" id="fFP-YG-qHi"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BjE-wc-oAP">
+                                <rect key="frame" x="0.0" y="147" width="402" height="655"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkCell" id="XCP-IY-SIA" customClass="WorkTableViewCell" customModule="iQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="402" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XCP-IY-SIA" id="o4m-Vm-N5H">
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="131"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-zf-C5W">
+                                                    <rect key="frame" x="20" y="15" width="150" height="101"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="1KL-jd-7P6"/>
+                                                        <constraint firstAttribute="width" constant="150" id="vps-HV-a53"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TAz-pY-PPQ">
+                                                    <rect key="frame" x="185" y="10" width="209" height="111"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome obra" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzf-KK-inb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="194" height="57.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano obra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2y-RN-nve">
+                                                            <rect key="frame" x="0.0" y="58.333333333333329" width="62.333333333333336" height="52.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="gzf-KK-inb" firstAttribute="top" secondItem="TAz-pY-PPQ" secondAttribute="top" constant="10" id="CYJ-sq-Ivj"/>
+                                                        <constraint firstItem="u2y-RN-nve" firstAttribute="top" secondItem="gzf-KK-inb" secondAttribute="bottom" id="LZ3-sS-e1N"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gzf-KK-inb" secondAttribute="trailing" constant="15" id="ncP-EM-x8N"/>
+                                                        <constraint firstAttribute="bottom" secondItem="u2y-RN-nve" secondAttribute="bottom" constant="3" id="qaf-AS-EIq"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="TAz-pY-PPQ" firstAttribute="centerY" secondItem="o4m-Vm-N5H" secondAttribute="centerY" id="8OV-vU-hDZ"/>
+                                                <constraint firstItem="W5L-zf-C5W" firstAttribute="top" secondItem="o4m-Vm-N5H" secondAttribute="top" constant="15" id="Gvh-on-G7M"/>
+                                                <constraint firstItem="W5L-zf-C5W" firstAttribute="leading" secondItem="o4m-Vm-N5H" secondAttribute="leading" constant="20" id="Rmr-8e-yR2"/>
+                                                <constraint firstAttribute="trailing" secondItem="TAz-pY-PPQ" secondAttribute="trailing" constant="8" id="WnS-pi-A3v"/>
+                                                <constraint firstAttribute="bottom" secondItem="W5L-zf-C5W" secondAttribute="bottom" constant="15" id="eca-fu-aqC"/>
+                                                <constraint firstItem="TAz-pY-PPQ" firstAttribute="leading" secondItem="W5L-zf-C5W" secondAttribute="trailing" constant="15" id="jWU-kx-UzA"/>
+                                                <constraint firstItem="TAz-pY-PPQ" firstAttribute="top" secondItem="o4m-Vm-N5H" secondAttribute="top" constant="10" id="wcn-Gr-MT1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="gzf-KK-inb" id="D5L-Og-Nb7"/>
+                                            <outlet property="workImageView" destination="W5L-zf-C5W" id="8lW-7Y-quf"/>
+                                            <outlet property="yearLabel" destination="u2y-RN-nve" id="626-CS-Zgn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5R0-7U-frJ"/>
                         <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BjE-wc-oAP" firstAttribute="top" secondItem="Xrm-Tg-tnp" secondAttribute="bottom" constant="25" id="1H6-ps-1ov"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xrm-Tg-tnp" secondAttribute="trailing" constant="30" id="Aqo-DC-HDS"/>
+                            <constraint firstItem="5R0-7U-frJ" firstAttribute="bottom" secondItem="BjE-wc-oAP" secondAttribute="bottom" id="BWM-ii-6xm"/>
+                            <constraint firstItem="Xrm-Tg-tnp" firstAttribute="top" secondItem="Z7j-Qc-Tvo" secondAttribute="topMargin" constant="25" id="Kg8-W6-vSF"/>
+                            <constraint firstItem="BjE-wc-oAP" firstAttribute="leading" secondItem="5R0-7U-frJ" secondAttribute="leading" id="Rfh-IL-6QG"/>
+                            <constraint firstItem="5R0-7U-frJ" firstAttribute="trailing" secondItem="BjE-wc-oAP" secondAttribute="trailing" id="krr-9i-b6D"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i7K-Hi-z41"/>
+                    <connections>
+                        <outlet property="tableView" destination="BjE-wc-oAP" id="FmE-AE-DLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMN-h3-hGt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10522" y="130"/>
+            <point key="canvasLocation" x="10520.895522388058" y="129.7482837528604"/>
+        </scene>
+        <!--Works Detail View Controller-->
+        <scene sceneID="K1p-wa-e7K">
+            <objects>
+                <viewController id="o1U-mS-Kqc" customClass="WorksDetailViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caA-fv-FSW">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R50-UR-IT5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZ2-pA-3Sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11404" y="130"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zHL-HB-mp2"/>
+        <segue reference="TMT-c8-Z3B"/>
+        <segue reference="GeG-AW-P31"/>
+        <segue reference="oDQ-Sx-zCr"/>
         <segue reference="JWn-Re-rIA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="217" height="104"/>
         <image name="oscar" width="61.333332061767578" height="75"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
