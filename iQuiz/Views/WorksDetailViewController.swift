@@ -9,18 +9,16 @@ import UIKit
 
 class WorksDetailViewController: UIViewController {
 
-    var work: Works?
+    @IBOutlet weak var workDetailImageView: UIImageView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    var workDetail: WorksDetail?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let work = work {
-            title = work.name
-        }
-        // Do any additional setup after loading the view.
+        
+        configureUI()
     }
-    
-
     /*
     // MARK: - Navigation
 

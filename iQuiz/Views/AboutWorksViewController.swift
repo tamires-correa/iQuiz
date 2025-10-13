@@ -31,21 +31,11 @@ class AboutWorksViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showWorkDetails" {
             if let detailVC = segue.destination as? WorksDetailViewController,
-               let work = sender as? Works {
-                // Passa o objeto Works para a tela de detalhes
-                detailVC.work = work
+               let selectedWork = sender as? Works {
+                if let workDetail = worksDetail.first(where: { $0.imageName == selectedWork.imageName}) {
+                    detailVC.workDetail = workDetail
+                }
             }
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

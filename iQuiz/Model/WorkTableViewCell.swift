@@ -23,14 +23,6 @@ class WorkTableViewCell: UITableViewCell{
         selectionStyle = .gray
     }
     
-//    override func layoutSubviews() {
-//          super.layoutSubviews()
-//
-//          for subview in subviews {
-//              subview.backgroundColor = .clear
-//          }
-//      }
-    
     func configure(with work: Works) {
         workImageView.image = UIImage(named: work.imageName)
         nameLabel.text = work.name

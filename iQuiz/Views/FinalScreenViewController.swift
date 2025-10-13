@@ -18,7 +18,6 @@ class FinalScreenViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         settingsFinalScreen()
-        // Do any additional setup after loading the view.
     }
     
     func settingsFinalScreen(){
@@ -28,13 +27,4 @@ class FinalScreenViewController: UIViewController {
         let percent = (score * 100) / (questions.count)
         percentLabel.text = "Percentual final: \(percent)%"
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
