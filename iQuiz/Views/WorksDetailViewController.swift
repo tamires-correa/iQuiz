@@ -9,9 +9,14 @@ import UIKit
 
 class WorksDetailViewController: UIViewController {
 
+    var work: Works?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let work = work {
+            title = work.name
+        }
         // Do any additional setup after loading the view.
     }
     

@@ -20,16 +20,16 @@ class WorkTableViewCell: UITableViewCell{
         
         backgroundColor = .clear
         contentView.backgroundColor = .clear
-        selectionStyle = .none
+        selectionStyle = .gray
     }
     
-    override func layoutSubviews() {
-          super.layoutSubviews()
-    
-          for subview in subviews {
-              subview.backgroundColor = .clear
-          }
-      }
+//    override func layoutSubviews() {
+//          super.layoutSubviews()
+//
+//          for subview in subviews {
+//              subview.backgroundColor = .clear
+//          }
+//      }
     
     func configure(with work: Works) {
         workImageView.image = UIImage(named: work.imageName)

@@ -29,7 +29,7 @@ extension AboutWorksViewController: UITableViewDataSource,      UITableViewDeleg
         
         let selectedWork = workList[indexPath.row]
         
-        print("Selected: \(selectedWork.name)")
+        performSegue(withIdentifier: "showWorkDetails", sender: selectedWork)
     }
 }
 
