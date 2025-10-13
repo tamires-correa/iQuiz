@@ -61,7 +61,7 @@
             <objects>
                 <viewController id="x0q-o8-OUZ" customClass="WelcomeViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qqx-R0-Vha">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Seja bem-vindes ao iQuiz! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-Yz-FOi">
@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-DM-nyl" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="375" width="274" height="62"/>
+                                <rect key="frame" x="64" y="370" width="274" height="62"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Zn1-Cj-bks"/>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Tu-rvV" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="462" width="274" height="62"/>
+                                <rect key="frame" x="64" y="457" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="VqD-eB-n9c"/>
                                 </constraints>
@@ -105,25 +105,10 @@
                                     <segue destination="thr-lq-2CQ" kind="show" id="oDQ-Sx-zCr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntn-Pn-shz" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="47" y="564" width="274" height="62"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="cgb-M5-68t"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sobre o arquiteto">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="x1r-UO-TLj" kind="show" id="GeG-AW-P31"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5RR-R9-8Ra"/>
                         <color key="backgroundColor" red="0.68235294117647061" green="0.83529411764705885" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ntn-Pn-shz" firstAttribute="top" secondItem="ACa-Tu-rvV" secondAttribute="bottom" constant="40" id="1a9-tg-tfO"/>
                             <constraint firstItem="HYH-DM-nyl" firstAttribute="centerX" secondItem="Qqx-R0-Vha" secondAttribute="centerX" id="3gM-mB-Yjd"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="ACa-Tu-rvV" secondAttribute="trailing" constant="64" id="43p-Tk-bAH"/>
                             <constraint firstItem="5RR-R9-8Ra" firstAttribute="trailing" secondItem="HYH-DM-nyl" secondAttribute="trailing" constant="64" id="9hx-xX-aey"/>
@@ -152,7 +137,7 @@
             <objects>
                 <viewController id="xg0-T4-CPQ" customClass="QuestionsViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azj-fv-i4H">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título Pergunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kW-A4-rBA">
@@ -412,11 +397,11 @@
                                                 <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <mutableString key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
+                                                        <string key="content">	Niemeyer foi um dos mais importantes arquitetos brasileiros e uma figura central da arquitetura moderna mundial. Nascido no Rio de Janeiro em 15 de dezembro de 1907, graduou-se em arquitetura pela Escola Nacional de Belas Artes em 1934 e iniciou sua carreira no escritório de Lúcio Costa. Ficou conhecido pelo uso inovador do concreto armado, pelas formas curvas marcantes e pela valorização dos espaços abertos e luminosos. Entre seus primeiros trabalhos está a colaboração no Ministério da Educação e Saúde no Rio de Janeiro, sob supervisão de Le Corbusier. Em 1940, seus projetos para o conjunto da Pampulha, em Belo Horizonte, romperam com o racionalismo e inauguraram uma arquitetura mais poética e fluida.
 	Na década de 1950, Niemeyer foi o responsável pelos principais edifícios de Brasília — como o Congresso Nacional, o Palácio da Alvorada, a Catedral e o Supremo Tribunal Federal consolidando sua fama internacional. Colaborou ainda no projeto da sede das Nações Unidas em Nova York e assinou obras em diversos países, como França, Itália e Argélia. No decorrer de sua longa carreira, Niemeyer projetou mais de 600 obras e recebeu diversos prêmios internacionais, se firmando como símbolo do design brasileiro e da busca por uma arquitetura que alia funcionalidade, arte e sociedade. Sua influência transcende estilos e gerações, deixando um legado duradouro para a arquitetura mundial. Oscar Niemeyer faleceu no Rio de Janeiro em 5 de dezembro de 2012, aos 104 anos.
 
 Para saber mais acesse: 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <font key="NSFont" metaFont="system" size="20"/>
@@ -592,13 +577,13 @@ Para saber mais acesse:
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-js-E8L">
-                                <rect key="frame" x="64" y="82" width="274" height="210"/>
+                                <rect key="frame" x="64" y="72" width="274" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="bJb-P2-tij"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="texto sobre obra + link" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O4u-Gq-2Gl">
-                                <rect key="frame" x="32" y="312" width="338" height="470"/>
+                                <rect key="frame" x="32" y="302" width="338" height="480"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -613,8 +598,8 @@ Para saber mais acesse:
                             <constraint firstItem="O4u-Gq-2Gl" firstAttribute="top" secondItem="qwM-js-E8L" secondAttribute="bottom" constant="20" id="PB0-XA-dNd"/>
                             <constraint firstItem="R50-UR-IT5" firstAttribute="trailing" secondItem="O4u-Gq-2Gl" secondAttribute="trailing" constant="32" id="Xcq-k6-wI9"/>
                             <constraint firstItem="R50-UR-IT5" firstAttribute="trailing" secondItem="qwM-js-E8L" secondAttribute="trailing" constant="64" id="gst-Zv-Ayh"/>
+                            <constraint firstItem="qwM-js-E8L" firstAttribute="top" secondItem="R50-UR-IT5" secondAttribute="top" constant="10" id="lii-uU-RdQ"/>
                             <constraint firstItem="qwM-js-E8L" firstAttribute="leading" secondItem="R50-UR-IT5" secondAttribute="leading" constant="64" id="xhD-zJ-c6W"/>
-                            <constraint firstItem="qwM-js-E8L" firstAttribute="top" secondItem="R50-UR-IT5" secondAttribute="top" constant="20" id="zeF-hR-rxz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pni-cx-qBg"/>
@@ -629,7 +614,7 @@ Para saber mais acesse:
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GeG-AW-P31"/>
+        <segue reference="TMT-c8-Z3B"/>
         <segue reference="oDQ-Sx-zCr"/>
         <segue reference="JWn-Re-rIA"/>
     </inferredMetricsTieBreakers>

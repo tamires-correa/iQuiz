@@ -22,6 +22,6 @@ let works: [Works] = [
     Works(name: "Palácio do Planalto", imageName: "palacio planalto", year: 1960),
     Works(name: "Igreja de Pampulha", imageName: "pampulha", year: 1943),
     Works(name: "Palácio da Alvorada", imageName: "alvorada", year: 1958),
-    Works(name: "Teatro Popular", imageName: "caminho", year: 2007),
+    Works(name: "Teatro Popular Oscar Niemeyer", imageName: "caminho", year: 2007),
     Works(name: "Supremo Tribunal de Justiça", imageName: "stf", year: 1960)
     ]

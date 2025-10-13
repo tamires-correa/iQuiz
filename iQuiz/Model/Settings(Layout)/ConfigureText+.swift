@@ -37,7 +37,7 @@ extension WorksDetailViewController{
         let linkRange = NSRange(location: description.count, length: linkText.count)
             attributedString.addAttributes([
                 .paragraphStyle: linkStyle,
-                .font: UIFont.systemFont(ofSize: 15),
+                .font: UIFont.systemFont(ofSize: 16),
                 .foregroundColor: textColor
             ], range: linkRange)
             
