@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		C08B6A332E9BF4770096AE13 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iQuiz.app; path = "/Users/tamirescorrea/Documents/Cursos/Swift/Alura/Construindo o primeiro app/iQuiz/build/Debug-iphoneos/iQuiz.app"; sourceTree = "<absolute>"; };
+		C07B96722E9D2DEF008172CC /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				C0EE45492E90856600D3EC4F /* iQuiz */,
+				C07B96722E9D2DEF008172CC /* iQuiz.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = iQuiz;
-			productReference = C08B6A332E9BF4770096AE13 /* iQuiz.app */;
+			productReference = C07B96722E9D2DEF008172CC /* iQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

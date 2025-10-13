@@ -13,8 +13,8 @@ class AboutWorksViewController: UIViewController{
     
     var workList = works
     
-    @IBAction func sort(_ sender: Any) {
-        print ("botão ordernar pressionado")
+    @IBAction func sort(_ sender: UIButton) {
+       showSortMenu(sender)
     }
     
     override func viewDidLoad() {
