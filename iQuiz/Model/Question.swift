@@ -14,7 +14,7 @@ struct Question{
     var correctAnswer: Int
 }
 
-let questions: [Question] = [
+let originalQuestions: [Question] = [
 Question(title: "Essa obra está localizada em Brasília/DF, como se chama?", answers: ["Catedral Metropolitana de Brasília", "Igreja Católica de Brasília", "Templo de Brasília"], imageName: "CatedralBrasilia", correctAnswer: 0),
 Question(title: "Essa obra está localizada em Curitiba/PR, como se chama?", answers: ["MAM (Museu de Arte Moderna)", "MON (Museu Oscar Niemeyer)", "MAC (Museu de Arte Contemporânea)"], imageName: "olho", correctAnswer: 1),
 Question(title: "Essa obra está localizada em São Paulo/SP, como se chama?", answers: ["COPAN", "COBAN", "COFAN"], imageName: "Copan", correctAnswer: 0),
@@ -27,3 +27,4 @@ Question(title: "Essa obra está localizada em Niterói/RJ, como se chama?", ans
 Question(title: "Essa obra está localizada em Brasília/DF, como se chama?", answers: ["Supremo Tribunal de Justiça", "Palácio do Planalto", "Palácio da Justiça"], imageName: "stf", correctAnswer: 0)
 ]
 
+var questions: [Question] = originalQuestions.shuffled()

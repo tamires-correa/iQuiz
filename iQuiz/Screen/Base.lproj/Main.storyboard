@@ -61,7 +61,7 @@
             <objects>
                 <viewController id="x0q-o8-OUZ" customClass="WelcomeViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qqx-R0-Vha">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Seja bem-vindes ao iQuiz! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbq-Yz-FOi">
@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-DM-nyl" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="370" width="274" height="62"/>
+                                <rect key="frame" x="64" y="406" width="274" height="62"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.60784313729999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Zn1-Cj-bks"/>
@@ -92,7 +92,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Tu-rvV" customClass="LayoutButton" customModule="iQuiz" customModuleProvider="target">
-                                <rect key="frame" x="64" y="457" width="274" height="62"/>
+                                <rect key="frame" x="64" y="493" width="274" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="VqD-eB-n9c"/>
                                 </constraints>
@@ -299,7 +299,8 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="x0q-o8-OUZ" kind="show" id="JWn-Re-rIA"/>
+                                    <action selector="retakeQuizButtonPressed:" destination="UsW-bA-TiZ" eventType="touchUpInside" id="8Cm-vk-Aq2"/>
+                                    <segue destination="xg0-T4-CPQ" kind="show" identifier="goToQuestionScreen" animates="NO" id="6C9-mq-nUQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -365,7 +366,7 @@
             <objects>
                 <viewController id="thr-lq-2CQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gBq-I5-Bdc">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oscar Ribeiro de Almeida Niemeyer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-ng-oY9">
@@ -381,7 +382,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-Cz-67O">
-                                <rect key="frame" x="0.0" y="201" width="402" height="601"/>
+                                <rect key="frame" x="0.0" y="201" width="402" height="611"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8b-hn-cmR">
                                         <rect key="frame" x="0.0" y="0.0" width="402" height="1462.6666666666667"/>
@@ -469,7 +470,7 @@ Para saber mais acesse:
             <objects>
                 <viewController id="x1r-UO-TLj" customClass="AboutWorksViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7j-Qc-Tvo">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrm-Tg-tnp">
@@ -484,7 +485,7 @@ Para saber mais acesse:
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BjE-wc-oAP">
-                                <rect key="frame" x="0.0" y="122" width="402" height="680"/>
+                                <rect key="frame" x="0.0" y="122" width="402" height="690"/>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -614,9 +615,8 @@ Para saber mais acesse:
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TMT-c8-Z3B"/>
-        <segue reference="oDQ-Sx-zCr"/>
-        <segue reference="JWn-Re-rIA"/>
+        <segue reference="zHL-HB-mp2"/>
+        <segue reference="6C9-mq-nUQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="217" height="104"/>

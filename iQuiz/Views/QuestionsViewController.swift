@@ -50,6 +50,8 @@ class QuestionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        score = 0
+        questionNumber = 0
 
         settingsQuestion()
     }

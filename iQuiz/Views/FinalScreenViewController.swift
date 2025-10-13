@@ -20,11 +20,16 @@ class FinalScreenViewController: UIViewController {
         settingsFinalScreen()
     }
     
+    @IBAction func retakeQuizButtonPressed(_ sender: LayoutButton) {
+        questions = originalQuestions.shuffled()
+        performSegue(withIdentifier: "goToQuestionScreen", sender: nil)
+    }
+    
     func settingsFinalScreen(){
         guard let score = score else {return}
-        resultLabel.text = "Você acertou \(score) de \(questions.count) questões"
+        resultLabel.text = "Você acertou \(score) de \(originalQuestions.count) questões"
         
-        let percent = (score * 100) / (questions.count)
+        let percent = (score * 100) / (originalQuestions.count)
         percentLabel.text = "Percentual final: \(percent)%"
     }
 }
