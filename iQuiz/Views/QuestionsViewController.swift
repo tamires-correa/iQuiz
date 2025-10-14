@@ -28,8 +28,10 @@ class QuestionsViewController: UIViewController {
         } else {
             sender.markAsIncorrect()
             
-            if let correctButton = answerButtons.first(where: { $0.tag == currentQuestion.correctAnswer }) {
-                correctButton.markAsCorrect()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                if let correctButton = self.answerButtons.first(where: { $0.tag == currentQuestion.correctAnswer }) {
+                    correctButton.markAsCorrect()
+                }
             }
         }
         
