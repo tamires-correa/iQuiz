@@ -2,7 +2,9 @@
 
 ## Demonstração
 
-![Demonstração do App](readme_assets/gif.gif)
+<div align="center">
+  <img src="readme_assets/gif.gif" alt="Meu GIF" width="250">
+</div>
 
 ## **Sobre o Aplicativo:**
 
