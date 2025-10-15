@@ -51,5 +51,11 @@ Após abrir, selecione um simulador de iPhone e clique em Run (▶) para compila
 
 Desenvolvido por **Tamires Correa**
 
-<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white (https://www.linkedin.com/in/tamires-gcorrea/)" /> <img src = "https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white (https://github.com/tamires-correa)">
+<a href="https://www.linkedin.com/in/tamires-gcorrea/">
+  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://github.com/tamires-correa">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
 
