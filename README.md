@@ -1,7 +1,8 @@
 # iQuiz
 
-![Static Badge](https://img.shields.io/badge/Status%3A-Em%20constru%C3%A7%C3%A3o-green--gray)
+## Demonstração
 
+![Demonstração do App](readme_assets/gif.gif)
 
 ## **Sobre o Aplicativo:**
 
@@ -9,25 +10,44 @@ O **iQuiz** é um aplicativo de perguntas e respostas que desafia o conhecimento
 
 ## **Funcionalidades:**
 
-* **10 Perguntas:** Um conjunto fixo de 10 perguntas.
-* **Contagem de pontuação:** Conforme acertos irá contabilizar na pontuação final.
+* **Quiz Desafiador:** Um conjunto de 10 perguntas focadas nas obras de Oscar Niemeyer.
+* **Contagem de pontuação:** Acompanha em tempo real a pontuação e será exibido no final o score.
 * **Interface Simples:** Design limpo e intuitivo com base em **UIKit**. 
-* **Feedback:** Feedback ao acertar ou ao errar na questão,se acertar a resposta fica verde e se errar a resposta fica vermelho e mostra a alternativa correta.
-* **Resultados Finais:** No final do jogo mostra a pontuação total e a porcentagem de acertos.
-* **Conhecimento sobre as obras:** Na tela de final do jogo tem um botão que será direcionado para outra tela onde terá conhecimentos gerais sobre as obras perguntadas no quiz.
-* **Conhecimento sobre o arquiteto:** Na tela de final do jogo tem um botão que será direcionado para outra tela onde terá conhecimentos gerais sobre o arquiteto.
+* **Feedback Instantâneo:** As respostas são validadas imediatamente, com cores que indicam acerto (verde) ou erro (vermelho), mostrando a alternativa correta ao errar.
+* **Resultados Detalhado:** No final, uma tela exibe a pontuação total e a porcentagem de acertos.
+* **Aprenda mais sobre as obras:** Em uma tela dedicada as obras, permite explorar uma lista de obras do quiz, com a opção de ordenar por nome ou ano de inauguração.
+* **Conheça o arquiteto:** Tela informativa sobre a vida e carreira de Oscar Niemeyer.
+**Links Externos:** Links para sites com mais informações, aprofundando o conhecimento do usuário sobre o arquiteto e suas obras.
 
 ## 🛠️ **Tecnologias Utilizadas:**
 
 * **IDE:** Xcode (Version 26.0.1)
 * **Linguagem:** Swift
 * **Frameworks:** UIKit
-* **Navegação:** UINavigationController
-* **Design:** Cores e fontes personalizadas usando **extensions** (UIColor)
+* **Gerenciamento de Navegação:** `UINavigationController`
+* **Design Customizado:** Compomentes e estilos criados via `extensions` de `UIColor` e `UIButton` para uma identidade visual única
 
-## 👩‍💻 **Autor:**
+## 🚀 Como Rodar o Projeto
 
-Desenvolvido por **Tamires Correa** (https://github.com/tamires-correa/)
+**Pré-requisitos:**
+* macOS com Xcode instalado.
 
+```bash
+# 1. Clone o repositório
+$ git clone https://github.com/tamires-correa/iQuiz.git
 
+# 2. Navegue até o diretório do projeto
+$ cd iQuiz
+
+# 3. Abra o projeto no Xcode
+open iQuiz.xcodeproj
+
+Após abrir, selecione um simulador de iPhone e clique em Run (▶) para compilar e executar o aplicativo.
+```
+
+## 👩‍💻 Autor:
+
+Desenvolvido por **Tamires Correa**
+
+<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white (https://www.linkedin.com/in/tamires-gcorrea/)" /> <img src = "https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white (https://github.com/tamires-correa)">
 
